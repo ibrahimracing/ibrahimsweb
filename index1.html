@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio Ibrahim</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Kanit', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #608BC1, #608Bd9);
+      color: white;
+      padding-top: 100px; /* agar konten tidak tertutup header */
+    }
+
+    header {
+      background-color: #133E87;
+      padding: 20px 40px;
+      position: fixed; /* header menempel di atas */
+      top: 0;
+      width: 100%;
+      z-index: 1000; /* pastikan di atas konten lain */
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .logo img {
+      width: 50px;
+      height: auto;
+    }
+
+    .title-center {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .title-center h1 {
+      margin: 0;
+      font-size: 24px;
+      color: white;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    .project {
+      background: #608Bd8;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      color: white;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin: 10px 0;
+    }
+
+    .project-img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-img:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      background-color: #133E87;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    .kontak-links {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+    }
+
+    .kontak-links a {
+      font-size: 50px;
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="images/LOGO.png" alt="Logo">
+      </div>
+      <div class="title-center">
+        <h1>AlvinoGraphy</h1>
+      </div>
+      <nav>
+        <a href="#tentang">Tentang</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="tentang" class="container">
+    <h2 class="text-center mb-4">Tentang Saya</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <p style="font-size: 18px;"> 
+          Halo! Saya Ibrahim, mahasiswa Universitas Pendidikan Indonesia jurusan Pendidikan Multimedia semester 4. Saya memiliki minat dalam desain grafis, fotografi, dan videografi. Saya senang belajar hal baru dan mengembangkan keterampilan saya di bidang kreatif.
+        </p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="images/Profile4.png" alt="Foto Profil Ibrahim" class="img-fluid rounded">
+      </div>
+    </div>
+  </section>
+
+  <section id="portofolio" class="container"> 
+    <h2 class="text-center mb-4">Portofolio</h2>
+
+    <div class="project text-center">
+      <h3>Buku Visual Cerita</h3>
+      <div class="gallery">
+        <img src="images/FOTOAKG.png" alt="Poster 1" class="project-img img-fluid" >
+        <img src="images/FOTOAKG2.png" alt="Poster 2" class="project-img img-fluid">
+        <img src="images/FOTOAKG3.png" alt="Poster 3" class="project-img img-fluid">
+        <img src="images/FOTOAKG4.png" alt="Poster 4" class="project-img img-fluid">
+      </div>
+      <p>Membuat desain grafis berupa buku visual cerita.</p>
+    </div>
+    
+    <div class="project text-center">
+      <h3>Poster Film</h3>
+      <div class="gallery">
+        <img src="images/Poster1.jpg" class="project-img img-fluid">
+        <img src="images/Poster2.jpg" class="project-img img-fluid">
+        <img src="images/Poster3.jpg" class="project-img img-fluid">
+        <img src="images/Poster4.jpg" class="project-img img-fluid">
+        <img src="images/Poster5.jpg" class="project-img img-fluid">
+        <img src="images/Poster6.jpg" class="project-img img-fluid">
+        <img src="images/Poster7.jpg" class="project-img img-fluid">
+        <img src="images/Poster8.jpg" class="project-img img-fluid">
+      </div>
+      <p>Membuat poster film untuk di-share ke Instagram.</p>
+    </div>
+
+    <div class="project text-center">
+      <h3>Videografi</h3>
+      <div class="gallery">
+        <img src="images/DIGIVID1.png" class="project-img img-fluid">
+        <img src="images/DIGIVID2.png" class="project-img img-fluid">
+        <img src="images/DIGIVID3.png" class="project-img img-fluid">
+        <img src="images/DIGIVID4.png" class="project-img img-fluid">
+      </div>
+      <p>Membuat video pendek tentang keseharian mahasiswa.</p>
+    </div>
+
+    <div class="project text-center">
+      <h3>Fotografi</h3>
+      <div class="gallery">
+        <img src="images/FOTDAS1.jpg" class="project-img img-fluid">
+        <img src="images/FOTDAS2.jpg" class="project-img img-fluid">
+        <img src="images/FOTDAS4.jpg" class="project-img img-fluid">
+        <img src="images/FOTDAS3.jpg" class="project-img img-fluid">
+        <img src="images/FOTDAS5.jpg" class="project-img img-fluid">
+        <img src="images/FOTDAS6.jpg" class="project-img img-fluid">
+        <img src="images/FOTDAS7.jpg" class="project-img img-fluid">
+        <img src="images/FOTDAS8.jpg" class="project-img img-fluid">
+        <img src="images/FOTDAS9.jpg" class="project-img img-fluid">
+        <img src="images/FOTDAS10.jpg" class="project-img img-fluid">
+        <img src="images/FOTDAS11.jpg" class="project-img img-fluid">
+        <img src="images/FOTDAS12.jpg" class="project-img img-fluid">
+      </div>
+      <p>Galeri foto-foto yang diambil selama perjalanan saya ke berbagai daerah di Indonesia.</p>
+    </div>
+  </section>
+
+  <section id="kontak" class="container text-center">
+    <h2>Kontak</h2>
+    <p>Hubungi saya melalui media sosial berikut:</p>
+    <ul class="kontak-links">
+      <li><a href="https://www.instagram.com/ibrhmalvno/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="mailto:8vinosudarman8@gmail.com"><i class="fas fa-envelope"></i></a></li>
+      <li><a href="https://www.behance.net/bangjeto"><i class="fab fa-behance"></i></a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ibrahim. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
